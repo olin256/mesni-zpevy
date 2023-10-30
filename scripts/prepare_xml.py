@@ -58,4 +58,4 @@ for f in args.files:
     midi_bank.text = "20"
 
 
-    xml.write(fname_new, pretty_print=True)
+    xml.write(fname_new, pretty_print=True, xml_declaration=True)
