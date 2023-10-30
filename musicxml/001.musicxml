@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='ASCII'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0.2 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="4.0.2">
   <work>
@@ -10,7 +10,7 @@
       <software>ProxyMusic 4.0.2</software>
       <encoding-date>2023-10-27</encoding-date>
     </encoding>
-    <source>Varhann&#237; doprovod k me&#353;n&#237;m zp&#283;v&#367;m, k hymn&#367;m pro denn&#237; modlitbu c&#237;rkve a ke zp&#283;v&#367;m s odpov&#283;d&#237; lidu; &#268;esk&#225; liturgick&#225; komise, Praha 1990</source>
+    <source>Varhanní doprovod k mešním zpěvům, k hymnům pro denní modlitbu církve a ke zpěvům s odpovědí lidu; Česká liturgická komise, Praha 1990</source>
   </identification>
   <part-list>
     <score-part id="P1">
