@@ -1,18 +1,27 @@
-import glob
 import os
 import subprocess
 import json
+from glob import iglob
 
 def pure_fname(fname):
     return os.path.splitext(os.path.basename(fname))[0]
+    
+def path_fname(fname, ext):
+    return "../" + ext + "/" + fname + "." + ext
+    
+def star_path(ext):
+    return "../" + ext + "/*." + ext
 
 musescore_exe = r"C:\Program Files\MuseScore 4\bin\MuseScore4.exe"
 
 # two runs because MuseScore cannot use styles when exporting to PDF
 # https://musescore.org/en/node/102421
 
-job_mscz = [{"in": fname, "out": "../mscz/"+pure_fname(fname)+".mscz"} for fname in glob.iglob("../musicxml/*.musicxml")]
-job_pdf = [{"in": "../mscz/"+fname+".mscz", "out": "../pdf/"+fname+".pdf"} for fname in map(pure_fname, glob.iglob("../musicxml/*.musicxml"))]
+available_pdf = set(map(pure_fname, iglob(star_path("pdf"))))
+available_musicxml = [fname for fname in map(pure_fname, iglob(star_path("musicxml"))) if fname not in available_pdf]
+
+job_mscz = [{"in": path_fname(fname, "musicxml"), "out": path_fname(fname, "mscz")} for fname in available_musicxml]
+job_pdf = [{"in": path_fname(fname, "mscz"), "out": path_fname(fname, "pdf")} for fname in available_musicxml]
 
 with open("job_mscz.json", "w") as f:
     json.dump(job_mscz, f)
