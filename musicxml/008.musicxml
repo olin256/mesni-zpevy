@@ -1236,7 +1236,7 @@
         <duration>2</duration>
         <voice>2</voice>
         <type>quarter</type>
-        <accidental>flat</accidental>
+        <accidental parentheses="yes" cautionary="yes">flat</accidental>
         <stem>down</stem>
         <staff>1</staff>
       </note>
