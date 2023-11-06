@@ -20,6 +20,8 @@ musescore_exe = r"C:\Program Files\MuseScore 4\bin\MuseScore4.exe"
 available_pdf = set(map(pure_fname, iglob(star_path("pdf"))))
 available_musicxml = [fname for fname in map(pure_fname, iglob(star_path("musicxml"))) if fname not in available_pdf]
 
+print(", ".join(available_musicxml))
+
 job_mscz = [{"in": path_fname(fname, "musicxml"), "out": path_fname(fname, "mscz")} for fname in available_musicxml]
 job_pdf = [{"in": path_fname(fname, "mscz"), "out": path_fname(fname, "pdf")} for fname in available_musicxml]
 
