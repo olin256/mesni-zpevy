@@ -1205,9 +1205,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="7">
-      <attributes>
-        <staff-details print-object="yes"/>
-      </attributes>
       <note>
         <pitch>
           <step>D</step>

@@ -1176,9 +1176,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="3">
-      <attributes>
-        <staff-details print-object="yes"/>
-      </attributes>
       <note>
         <pitch>
           <step>C</step>

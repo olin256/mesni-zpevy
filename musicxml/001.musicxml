@@ -799,9 +799,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="4">
-      <attributes>
-        <staff-details print-object="yes"/>
-      </attributes>
       <note>
         <pitch>
           <step>B</step>

@@ -858,9 +858,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="10">
-      <attributes>
-        <staff-details print-object="yes"/>
-      </attributes>
       <note>
         <pitch>
           <step>C</step>
@@ -1564,9 +1561,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="19">
-      <attributes>
-        <staff-details print-object="yes"/>
-      </attributes>
       <note>
         <pitch>
           <step>F</step>
