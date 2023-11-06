@@ -9,7 +9,7 @@ parser.add_argument("-f", "--force", action=argparse.BooleanOptionalAction)
 parser.add_argument("files", nargs="*", type=argparse.FileType("r", encoding="utf-8"), default=sys.stdin)
 args = parser.parse_args()
 
-bad_elements = ["miscellaneous", "defaults", "supports", "print", "direction", "volume", "midi-program", "staff-details"]
+bad_elements = ["miscellaneous", "defaults", "supports", "print", "direction", "volume", "midi-program", "staff-details", "display-step", "display-octave"]
 bad_attributes = ["width", "default-x", "default-y"]
 
 parser = etree.XMLParser(remove_blank_text=True)
