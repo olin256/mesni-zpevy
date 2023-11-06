@@ -2,13 +2,14 @@ import os
 import sys
 from lxml import etree
 import argparse
+from itertools import islice, chain
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--force", action=argparse.BooleanOptionalAction)
 parser.add_argument("files", nargs="*", type=argparse.FileType("r", encoding="utf-8"), default=sys.stdin)
 args = parser.parse_args()
 
-bad_elements = ["miscellaneous", "defaults", "supports", "print", "direction", "volume", "midi-program"]
+bad_elements = ["miscellaneous", "defaults", "supports", "print", "direction", "volume", "midi-program", "staff-details"]
 bad_attributes = ["width", "default-x", "default-y"]
 
 parser = etree.XMLParser(remove_blank_text=True)
@@ -28,7 +29,7 @@ for f in args.files:
     root = xml.getroot()
 
     # remove bad elements
-    for el in root.iter(*bad_elements):
+    for el in chain(root.iter(*bad_elements), islice(root.iter("attributes"), 1, None)):
         el.getparent().remove(el)
 
     # remove bad attributes
