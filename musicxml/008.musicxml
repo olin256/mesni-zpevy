@@ -920,7 +920,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="above" bezier-x="9" bezier-y="2"/>
+          <slur type="start" number="1" placement="above"/>
         </notations>
       </note>
       <note>
@@ -934,7 +934,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="stop" number="1" bezier-x="-9" bezier-y="2"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <note>

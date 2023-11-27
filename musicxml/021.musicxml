@@ -266,7 +266,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="above" bezier-x="10" bezier-y="9"/>
+          <slur type="start" number="1" placement="above"/>
         </notations>
       </note>
       <note>
@@ -280,7 +280,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="stop" number="1" bezier-x="-11" bezier-y="8"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <note>
@@ -481,7 +481,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="above" bezier-x="10" bezier-y="13"/>
+          <slur type="start" number="1" placement="above"/>
         </notations>
       </note>
       <note>
@@ -496,7 +496,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="stop" number="1" bezier-x="-12" bezier-y="12"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <note>
@@ -626,7 +626,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="above" bezier-x="12" bezier-y="11"/>
+          <slur type="start" number="1" placement="above"/>
         </notations>
       </note>
       <note>
@@ -640,7 +640,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="stop" number="1" bezier-x="-10" bezier-y="13"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <note>
@@ -1497,7 +1497,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="above" bezier-x="15" bezier-y="8"/>
+          <slur type="start" number="1" placement="above"/>
         </notations>
       </note>
       <note>
@@ -1511,7 +1511,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="stop" number="1" bezier-x="-8" bezier-y="15"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <note>
@@ -1652,7 +1652,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="above" bezier-x="15" bezier-y="7"/>
+          <slur type="start" number="1" placement="above"/>
         </notations>
       </note>
       <note>
@@ -1666,7 +1666,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="stop" number="1" bezier-x="-9" bezier-y="14"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <note>

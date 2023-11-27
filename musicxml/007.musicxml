@@ -1604,7 +1604,7 @@
         <stem>up</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="above" bezier-x="12" bezier-y="5"/>
+          <slur type="start" number="1" placement="above"/>
         </notations>
       </note>
       <note>
@@ -1619,7 +1619,7 @@
         <staff>1</staff>
         <notations>
           <fermata type="upright"/>
-          <slur type="stop" number="1" bezier-x="-8" bezier-y="10"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <backup>

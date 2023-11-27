@@ -542,7 +542,7 @@
         <stem>up</stem>
         <staff>2</staff>
         <notations>
-          <slur type="stop" number="1" bezier-x="-1" bezier-y="-4"/>
+          <slur type="stop" number="1"/>
         </notations>
       </note>
       <note>
@@ -570,7 +570,7 @@
         <stem>down</stem>
         <staff>2</staff>
         <notations>
-          <slur type="start" number="1" placement="below" bezier-x="4" bezier-y="1"/>
+          <slur type="start" number="1" placement="below"/>
         </notations>
       </note>
       <note>

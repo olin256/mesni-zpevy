@@ -10,7 +10,7 @@ parser.add_argument("files", nargs="*", type=argparse.FileType("r", encoding="ut
 args = parser.parse_args()
 
 bad_elements = ["miscellaneous", "defaults", "supports", "print", "direction", "volume", "midi-program", "staff-details", "display-step", "display-octave"]
-bad_attributes = ["width", "default-x", "default-y"]
+bad_attributes = ["width", "default-x", "default-y", "bezier-x", "bezier-y"]
 
 parser = etree.XMLParser(remove_blank_text=True)
 
