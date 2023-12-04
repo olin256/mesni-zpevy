@@ -1395,6 +1395,11 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <backup>
         <duration>6</duration>
@@ -1449,6 +1454,11 @@
         <type>quarter</type>
         <stem>up</stem>
         <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <backup>
         <duration>6</duration>

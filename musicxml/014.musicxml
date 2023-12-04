@@ -432,6 +432,11 @@
         <type>half</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -482,6 +487,11 @@
         <type>half</type>
         <stem>up</stem>
         <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -659,6 +669,11 @@
         <dot/>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <backup>
         <duration>3</duration>
@@ -691,6 +706,9 @@
         <staff>2</staff>
         <notations>
           <slur type="stop" number="1"/>
+          <articulations>
+            <breath-mark/>
+          </articulations>
         </notations>
       </note>
       <backup>
@@ -1082,6 +1100,11 @@
         <type>half</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -1143,6 +1166,9 @@
         <staff>2</staff>
         <notations>
           <tied type="stop"/>
+          <articulations>
+            <breath-mark/>
+          </articulations>
         </notations>
       </note>
       <note>

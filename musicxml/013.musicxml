@@ -229,6 +229,11 @@
         <type>quarter</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -309,6 +314,11 @@
         <type>quarter</type>
         <stem>up</stem>
         <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -487,6 +497,11 @@
         <type>quarter</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -543,6 +558,11 @@
         <staff>2</staff>
         <notations>
           <slur type="stop" number="1"/>
+        </notations>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
         </notations>
       </note>
       <note>
@@ -820,6 +840,11 @@
         <type>half</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -874,6 +899,11 @@
         <type>half</type>
         <stem>up</stem>
         <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -1033,6 +1063,11 @@
         <dot/>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <backup>
         <duration>6</duration>
@@ -1063,6 +1098,11 @@
         <dot/>
         <stem>up</stem>
         <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <backup>
         <duration>6</duration>
@@ -1308,6 +1348,11 @@
         <type>quarter</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -1384,6 +1429,11 @@
         <type>quarter</type>
         <stem>up</stem>
         <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
