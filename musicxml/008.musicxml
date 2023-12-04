@@ -919,9 +919,6 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
-        <notations>
-          <slur type="start" number="1" placement="above"/>
-        </notations>
       </note>
       <note>
         <pitch>
@@ -933,9 +930,6 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
-        <notations>
-          <slur type="stop" number="1"/>
-        </notations>
       </note>
       <note>
         <pitch>
