@@ -9,6 +9,9 @@
       <software>Audiveris 5.3.1</software>
       <software>ProxyMusic 4.0.2</software>
       <encoding-date>2023-11-19</encoding-date>
+      <supports element="accidental" type="yes"/>
+      <supports element="beam" type="yes"/>
+      <supports element="stem" type="yes"/>
     </encoding>
     <source>Varhanní doprovod k mešním zpěvům, k hymnům pro denní modlitbu církve a ke zpěvům s odpovědí lidu; Česká liturgická komise, Praha 1990</source>
   </identification>

@@ -58,5 +58,9 @@ for f in args.files:
     midi_bank = etree.SubElement(midi_instrument, "midi-bank")
     midi_bank.text = "20"
 
+    encoding = root.find(".//encoding")
+    for tag in ["accidental", "beam", "stem"]:
+        etree.SubElement(encoding, "supports", element=tag, type="yes")
+
 
     xml.write(fname_new, pretty_print=True, xml_declaration=True, encoding="utf-8")
