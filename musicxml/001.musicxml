@@ -1332,11 +1332,6 @@
         <type>quarter</type>
         <stem>down</stem>
         <staff>1</staff>
-        <notations>
-          <articulations>
-            <tenuto placement="above"/>
-          </articulations>
-        </notations>
       </note>
       <backup>
         <duration>12</duration>
