@@ -3,9 +3,11 @@ import sys
 from lxml import etree
 import argparse
 from itertools import islice, chain
+from breath_marks import add_breath_marks, get_omr_tree
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--force", action=argparse.BooleanOptionalAction)
+parser.add_argument("-N", "--no_breath_marks", action=argparse.BooleanOptionalAction)
 parser.add_argument("files", nargs="*", type=argparse.FileType("r", encoding="utf-8"), default=sys.stdin)
 args = parser.parse_args()
 
@@ -15,10 +17,12 @@ bad_attributes = ["width", "default-x", "default-y", "bezier-x", "bezier-y"]
 parser = etree.XMLParser(remove_blank_text=True)
 
 for f in args.files:
-    fname_noext, ext = os.path.splitext(f.name)
+    fname = f.name
+    fname_noext, ext = os.path.splitext(fname)
+    base_fname_noext = os.path.basename(fname_noext)
     if not args.force:
         if fname_noext.endswith("_clean"):
-            print("skipping " + f.name)
+            print("skipping " + fname)
             f.close()
             continue
 
@@ -42,7 +46,7 @@ for f in args.files:
 
     work = etree.Element("work")
     work_number = etree.SubElement(work, "work-number")
-    work_number.text = os.path.basename(fname_noext).lstrip("0")
+    work_number.text = base_fname_noext.lstrip("0")
     root.insert(0, work)
 
     score_part = root.find(".//score-part")
@@ -61,6 +65,17 @@ for f in args.files:
     encoding = root.find(".//encoding")
     for tag in ["accidental", "beam", "stem"]:
         etree.SubElement(encoding, "supports", element=tag, type="yes")
+
+    # add breath marks, if possible
+    if not args.no_breath_marks:
+        omr_path = os.path.dirname(os.path.abspath(fname)) + "\\..\\omr\\" + base_fname_noext + ".omr"
+        if os.path.isfile(omr_path):
+            with open(omr_path, "rb") as omrf:
+                omr_tree = get_omr_tree(omrf, parser)
+
+            add_breath_marks(xml, omr_tree)
+        else:
+            print(fname + ": no omr file")
 
 
     xml.write(fname_new, pretty_print=True, xml_declaration=True, encoding="utf-8")
