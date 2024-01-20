@@ -3,7 +3,14 @@ import sys
 from lxml import etree
 import argparse
 from itertools import islice, chain
+from copy import deepcopy
+from collections import Counter
 from breath_marks import add_breath_marks, get_omr_tree
+
+def measure_duration(voice):
+    return sum(int(n.findtext("duration")) for n in measure.iterchildren("note") if (n.find("chord") is None) and (n.findtext("voice") == voice))
+
+complementary_voice = {"1": "2", "2": "1", "5": "6", "6": "5"}
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--force", action=argparse.BooleanOptionalAction)
@@ -42,6 +49,8 @@ for f in args.files:
             if attr in el.attrib:
                 del el.attrib[attr]
 
+    # common data
+
     root.find(".//source").text = "Varhanní doprovod k mešním zpěvům, k hymnům pro denní modlitbu církve a ke zpěvům s odpovědí lidu; Česká liturgická komise, Praha 1990"
 
     work = etree.Element("work")
@@ -65,6 +74,67 @@ for f in args.files:
     encoding = root.find(".//encoding")
     for tag in ["accidental", "beam", "stem"]:
         etree.SubElement(encoding, "supports", element=tag, type="yes")
+
+    # add matching rests
+
+    measures_to_fix = set()
+
+    existing_rests = list(root.iter("rest"))
+    for rest in existing_rests:
+        rest_note = rest.getparent()
+        voice = rest_note.findtext("voice")
+        measure = rest_note.getparent()
+
+        prev_duration = 0
+        for note in measure.iterchildren("note"):
+            if note is rest_note:
+                break
+            elif (note.findtext("voice") == voice) and (note.find("chord") is None):
+                prev_duration += int(note.findtext("duration"))
+
+        comp_voice = complementary_voice[voice]
+        comp_duration = 0
+        overflow = False
+        last_comp_note = None
+        for note in filter(lambda n: n.findtext("voice") == comp_voice, measure.iterchildren("note")):
+            # if (note.findtext("voice") == comp_voice) and (note.find("chord") is None):
+            if note.find("chord") is None:
+                comp_duration += int(note.findtext("duration"))
+                if comp_duration > prev_duration:
+                    overflow = True
+                    break
+
+        if (not overflow) and (comp_duration < prev_duration):
+            print(fname + ": non-matching rest in measure " + measure.get("number"))
+            continue
+
+        if (not overflow) or (note.find("rest") is None):
+            if overflow:
+                note = note.getprevious()
+            new_rest_note = deepcopy(rest_note)
+            new_rest_note.find("voice").text = comp_voice
+            note.addnext(new_rest_note)
+            measures_to_fix.add(measure)
+
+
+    # fix measures where rests were added
+    for measure in measures_to_fix:
+        total_duration = str(measure_duration("1"))
+        for backup in measure.iterchildren("backup"):
+            backup.find("duration").text = total_duration
+
+
+    # check measure durations
+    for measure in root.find("part").iterchildren("measure"):
+        voice_durations = Counter()
+        for n in measure.iterchildren("note"):
+            if (n.find("chord") is not None):
+                continue
+            voice = n.findtext("voice")
+            voice_durations[voice] += int(n.findtext("duration"))
+        if len(set(voice_durations.values())) != 1:
+            print(fname + ": different voice durations in measure " + measure.get("number"))
+
 
     # add breath marks, if possible
     if not args.no_breath_marks:
