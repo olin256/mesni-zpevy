@@ -9,6 +9,7 @@ PDF soubory ve složce [pdf](/pdf) jsou vytvářeny automaticky pomocí MuseScor
 
 Ve složce [omr](/omr) se nachází soubory programu [Audiveris](https://github.com/Audiveris/audiveris), který já osobně na přepis používám.
 
+Některé doprovody digitalizoval [Petr Chaloupský](http://www.chaloupsky.op.cz/).
 Chcete-li se do projektu zapojit, kontaktujte [mne](https://karlin.mff.cuni.cz/~slavika/).
 
 Stav přepisu je možné vidět [zde](https://docs.google.com/spreadsheets/d/14aePxDP_JFILqAcNDQxL1LpkKi1S2q6XfP4ELKms_QI/edit).
