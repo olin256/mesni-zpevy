@@ -8,10 +8,15 @@
     tagline = "Digitalizované doprovody k Mešním zpěvům https://github.com/olin256/mesni-zpevy"
     }
 
+\paper {
+     markup-system-spacing.basic-distance = #10
+}
+
 \layout {
     indent = #0
     \context { \Score
         autoBeaming = ##f
+        \override SpacingSpanner.spacing-increment = 2.4
         % TIME
     }
     \context { \Staff
