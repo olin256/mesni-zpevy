@@ -8,7 +8,7 @@
     <encoding>
       <software>Audiveris 5.3.1</software>
       <software>ProxyMusic 4.0.2</software>
-      <encoding-date>2023-11-06</encoding-date>
+      <encoding-date>2024-01-22</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="stem" type="yes"/>
@@ -560,9 +560,6 @@
         <stem>up</stem>
         <staff>2</staff>
         <notations>
-          <slur type="stop" number="1"/>
-        </notations>
-        <notations>
           <articulations>
             <breath-mark/>
           </articulations>
@@ -592,9 +589,6 @@
         <type>half</type>
         <stem>down</stem>
         <staff>2</staff>
-        <notations>
-          <slur type="start" number="1" placement="below"/>
-        </notations>
       </note>
       <note>
         <pitch>

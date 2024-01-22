@@ -1544,11 +1544,13 @@
       <backup>
         <duration>8</duration>
       </backup>
-      <forward>
+      <note>
+        <rest/>
         <duration>2</duration>
         <voice>2</voice>
+        <type>quarter</type>
         <staff>1</staff>
-      </forward>
+      </note>
       <note>
         <pitch>
           <step>D</step>
@@ -1625,11 +1627,13 @@
       <backup>
         <duration>8</duration>
       </backup>
-      <forward>
+      <note>
+        <rest/>
         <duration>2</duration>
         <voice>6</voice>
+        <type>quarter</type>
         <staff>2</staff>
-      </forward>
+      </note>
       <note>
         <pitch>
           <step>A</step>

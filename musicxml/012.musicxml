@@ -8,7 +8,7 @@
     <encoding>
       <software>Audiveris 5.3.1</software>
       <software>ProxyMusic 4.0.2</software>
-      <encoding-date>2023-11-03</encoding-date>
+      <encoding-date>2024-01-21</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="stem" type="yes"/>
@@ -192,13 +192,14 @@
           <octave>3</octave>
         </pitch>
         <duration>3</duration>
+        <tie type="start"/>
         <voice>6</voice>
         <type>quarter</type>
         <dot/>
         <stem>down</stem>
         <staff>2</staff>
         <notations>
-          <slur type="start" number="1" placement="below"/>
+          <tied type="start" orientation="under"/>
         </notations>
       </note>
     </measure>
@@ -276,12 +277,13 @@
           <octave>3</octave>
         </pitch>
         <duration>2</duration>
+        <tie type="stop"/>
         <voice>6</voice>
         <type>quarter</type>
         <stem>down</stem>
         <staff>2</staff>
         <notations>
-          <slur type="stop" number="1"/>
+          <tied type="stop"/>
         </notations>
       </note>
       <note>
@@ -1835,14 +1837,15 @@
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>3</duration>
         <voice>2</voice>
         <type>quarter</type>
+        <dot/>
         <stem>down</stem>
         <staff>1</staff>
       </note>
       <backup>
-        <duration>2</duration>
+        <duration>3</duration>
       </backup>
       <note>
         <pitch>
@@ -1864,9 +1867,10 @@
           <step>C</step>
           <octave>3</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>3</duration>
         <voice>6</voice>
         <type>quarter</type>
+        <dot/>
         <stem>down</stem>
         <staff>2</staff>
       </note>
@@ -1903,14 +1907,15 @@
           <step>F</step>
           <octave>4</octave>
         </pitch>
-        <duration>2</duration>
+        <duration>3</duration>
         <voice>2</voice>
         <type>quarter</type>
+        <dot/>
         <stem>down</stem>
         <staff>1</staff>
       </note>
       <backup>
-        <duration>2</duration>
+        <duration>3</duration>
       </backup>
       <note>
         <pitch>
@@ -2119,12 +2124,13 @@
           <octave>4</octave>
         </pitch>
         <duration>1</duration>
+        <tie type="start"/>
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
         <staff>2</staff>
         <notations>
-          <slur type="start" number="1" placement="above"/>
+          <tied type="start" orientation="over"/>
         </notations>
       </note>
       <backup>
@@ -2212,12 +2218,13 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <tie type="stop"/>
         <voice>5</voice>
         <type>quarter</type>
         <stem>up</stem>
         <staff>2</staff>
         <notations>
-          <slur type="stop" number="1"/>
+          <tied type="stop"/>
         </notations>
       </note>
       <note>
@@ -2305,12 +2312,13 @@
           <octave>4</octave>
         </pitch>
         <duration>1</duration>
+        <tie type="start"/>
         <voice>2</voice>
         <type>eighth</type>
         <stem>down</stem>
         <staff>1</staff>
         <notations>
-          <slur type="start" number="1" placement="below"/>
+          <tied type="start" orientation="under"/>
         </notations>
       </note>
       <backup>
@@ -2405,12 +2413,13 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <tie type="stop"/>
         <voice>2</voice>
         <type>quarter</type>
         <stem>down</stem>
         <staff>1</staff>
         <notations>
-          <slur type="stop" number="1"/>
+          <tied type="stop"/>
         </notations>
       </note>
       <backup>
