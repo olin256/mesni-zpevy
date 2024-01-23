@@ -80,11 +80,20 @@ for f in args.files:
 
 
     # normalize voices
-    for voice in root.iter("voice"):
+    for voice in part.iter("voice"):
         if voice.text == "3":
             voice.text = "5"
         elif voice.text == "4":
             voice.text = "6"
+
+    # assign voices to chord notes
+    for chord in part.iter("chord"):
+        chord_note = chord.getparent()
+        if chord_note.find("voice") is None:
+            voice = etree.Element("voice")
+            prev_note = chord_note.getprevious()
+            voice.text = prev_note.findtext("voice")
+            chord_note.find("type").addprevious(voice)
 
     # minimize durations
     divisions = root.find(".//divisions")
