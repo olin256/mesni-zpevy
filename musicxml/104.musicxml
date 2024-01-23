@@ -1915,6 +1915,7 @@
         </pitch>
         <duration>2</duration>
         <tie type="stop"/>
+        <voice>2</voice>
         <type>quarter</type>
         <staff>1</staff>
         <notations>

@@ -576,6 +576,7 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <voice>2</voice>
         <type>half</type>
         <staff>1</staff>
       </note>
@@ -1176,6 +1177,7 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <voice>2</voice>
         <type>half</type>
         <staff>1</staff>
       </note>
