@@ -70,7 +70,10 @@ def musicxml_to_ly(xml_file):
         for measure in measures:
             measure_duration = 0
             measure_els = deque()
-            for el in measure.iterchildren("note", "barline"):
+            tags_to_iterate = ["note"]
+            if voice == 1:
+                tags_to_iterate.append("barline")
+            for el in measure.iterchildren(*tags_to_iterate):
                 if el.tag == "note":
                     if int(el.findtext("voice")) != voice:
                         continue
