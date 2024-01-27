@@ -2,6 +2,7 @@ import os
 import sys
 from lxml import etree
 import argparse
+import re
 from itertools import islice, chain
 from copy import deepcopy
 from collections import Counter
@@ -135,6 +136,12 @@ for f in args.files:
         if len(set(voice_durations.values())) != 1:
             print(fname + ": different voice durations in measure " + measure.get("number"))
 
+    # for Audiveris version >= 5.4, breath marks are already present
+    audi_software_list = list(filter(None, (re.match(r"Audiveris \d+\.(\d+)", s.text) for s in root.iter("software"))))
+    if audi_software_list:
+        minor_version = int(audi_software_list[0][1])
+        if minor_version >= 4:
+            args.no_breath_marks = True
 
     # add breath marks, if possible
     if not args.no_breath_marks:
