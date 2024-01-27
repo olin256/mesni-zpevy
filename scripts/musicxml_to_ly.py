@@ -83,10 +83,14 @@ def musicxml_to_ly(xml_file):
                         measure_duration += int(el.findtext("duration"))
                         measure_els.append(note_str)
                     else:
+                        intermediate_stuff = deque()
                         prev_note = measure_els.pop()
-                        note_len = re.search(r"\d+\.?", prev_note)[0]
+                        while (len_match := re.search(r"\d+\.?", prev_note)) is None:
+                            intermediate_stuff.appendleft(prev_note)
+                            prev_note = measure_els.pop()
                         prev_note, note_str = (re.sub(r"\d+\.?", "", n) for n in [prev_note, note_str])
-                        measure_els.extend(["<", prev_note, note_str, ">"+note_len])
+                        measure_els.extend(["<", prev_note, note_str, ">"+len_match[0]])
+                        measure_els.extend(intermediate_stuff)
 
                     if (beam := el.find("beam")) is not None:
                         if beam.text == "begin":
@@ -99,6 +103,8 @@ def musicxml_to_ly(xml_file):
                             measure_els.append("~")
 
                     if (notations := el.find("notations")) is not None:
+                        if notations.find("fermata") is not None:
+                            measure_els.append("\\fermata")
                         if (slur := notations.find("slur")) is not None:
                             slur_type = slur.get("type")
                             if slur_type == "start":
