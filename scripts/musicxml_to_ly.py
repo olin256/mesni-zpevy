@@ -65,7 +65,6 @@ def musicxml_to_ly(xml_file):
 
     for voice, vname in zip(voices, voice_names):
         repeat_open = False
-        tie_open = False
         voice_output = []
         for measure in measures:
             measure_duration = 0
@@ -98,13 +97,12 @@ def musicxml_to_ly(xml_file):
                         elif beam.text == "end":
                             measure_els.append("]")
 
-                    if (tied := el.find("tied")) is not None:
-                        if tied.get("type") != "stop":
-                            measure_els.append("~")
-
                     if (notations := el.find("notations")) is not None:
                         if notations.find("fermata") is not None:
                             measure_els.append("\\fermata")
+                        if (tied := notations.find("tied")) is not None:
+                            if tied.get("type") != "stop":
+                                measure_els.append("~")
                         if (slur := notations.find("slur")) is not None:
                             slur_type = slur.get("type")
                             if slur_type == "start":
