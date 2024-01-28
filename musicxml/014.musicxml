@@ -619,7 +619,7 @@
         <stem>up</stem>
         <staff>2</staff>
         <notations>
-          <slur type="start" number="1" placement="above"/>
+          <tied type="start" orientation="over"/>
         </notations>
       </note>
       <backup>
@@ -708,7 +708,7 @@
         <stem>up</stem>
         <staff>2</staff>
         <notations>
-          <slur type="stop" number="1"/>
+          <tied type="stop"/>
           <articulations>
             <breath-mark/>
           </articulations>
