@@ -123,6 +123,9 @@ def musicxml_to_ly(xml_file):
                             if not repeat_open:
                                 voice_output[0].appendleft("\\repeat volta 2 {")
                             repeat_open = False
+                    else:
+                        if el.findtext("bar-style") == "light-light":
+                            measure_els.append('\\bar "||"')
 
             sixteens = str((4*measure_duration) // divisions)
             if free_time:
