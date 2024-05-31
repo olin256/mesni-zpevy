@@ -65,6 +65,7 @@ def musicxml_to_ly(xml_file):
 
     for voice, vname in zip(voices, voice_names):
         repeat_open = False
+        add_starting_repeat = False
         voice_output = []
         for measure in measures:
             measure_duration = 0
@@ -121,7 +122,7 @@ def musicxml_to_ly(xml_file):
                         else:
                             measure_els.append("}")
                             if not repeat_open:
-                                voice_output[0].appendleft("\\repeat volta 2 {")
+                                add_starting_repeat = True
                             repeat_open = False
                     else:
                         if el.findtext("bar-style") == "light-light":
@@ -133,6 +134,9 @@ def musicxml_to_ly(xml_file):
             elif measure.get("number") == "0":
                 measure_els.appendleft("\\partial 16*" + sixteens)
             voice_output.append(measure_els)
+
+        if add_starting_repeat:
+            voice_output[0].appendleft("\\repeat volta 2 {")
 
         voice_start_els = []
         if not free_time:
