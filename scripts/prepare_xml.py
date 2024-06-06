@@ -41,8 +41,17 @@ for f in args.files:
     root = xml.getroot()
 
     # remove bad elements
-    for el in chain(root.iter(*bad_elements), islice(root.iter("attributes"), 1, None)):
+    for el in root.iter(*bad_elements):
         el.getparent().remove(el)
+
+    # remove unnecessary <attributes>
+    for el in islice(root.iter("attributes"), 1, None):
+        if (time := el.find("time")) is None:
+            el.getparent().remove(el)
+        else:
+            for child in el:
+                if child is not time:
+                    el.remove(child)
 
     # remove bad attributes
     for el in root.iter():
