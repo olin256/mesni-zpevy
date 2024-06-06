@@ -55,11 +55,8 @@ def musicxml_to_ly(xml_file):
         key = keys[key_fifths] + " \\major"
     else:
         key = "c \\major"
-    time_el = attributes.find("time")
-    free_time = time_el is None
 
-    if not free_time:
-        time_sig = time_el.findtext("beats") + "/" + time_el.findtext("beat-type")
+    free_time = attributes.find("time") is None
 
     voice_total_str = ""
 
@@ -73,6 +70,8 @@ def musicxml_to_ly(xml_file):
             tags_to_iterate = ["note"]
             if voice == 1:
                 tags_to_iterate.append("barline")
+                if not free_time:
+                    tags_to_iterate.append("attributes")
             for el in measure.iterchildren(*tags_to_iterate):
                 if el.tag == "note":
                     if int(el.findtext("voice")) != voice:
@@ -113,8 +112,7 @@ def musicxml_to_ly(xml_file):
                         if notations.find(".//breath-mark") is not None:
                             measure_els.append("\\breathe")
 
-                else:
-                    # barline
+                elif el.tag == "barline":
                     if (repeat := el.find("repeat")) is not None:
                         if repeat.get("direction") == "forward":
                             measure_els.append("\\repeat volta 2 {")
@@ -128,6 +126,11 @@ def musicxml_to_ly(xml_file):
                         if el.findtext("bar-style") == "light-light":
                             measure_els.append('\\bar "||"')
 
+                elif el.tag == "attributes":
+                    if (time_el := el.find("time")) is not None:
+                        time_sig = time_el.findtext("beats") + "/" + time_el.findtext("beat-type")
+                        measure_els.append("\\time " + time_sig)
+
             sixteens = str((4*measure_duration) // divisions)
             if free_time:
                 measure_els.appendleft("\\time " + sixteens + "/16")
@@ -139,8 +142,7 @@ def musicxml_to_ly(xml_file):
             voice_output[0].appendleft("\\repeat volta 2 {")
 
         voice_start_els = []
-        if not free_time:
-            voice_start_els.append("\\time " + time_sig)
+
         voice_start_els.append("\\clef " + ('"bass"' if voice > 2 else '"treble"'))
         voice_start_els.append("\\key " + key)
         voice_start = " ".join(voice_start_els)
