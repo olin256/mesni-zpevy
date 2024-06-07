@@ -13,3 +13,5 @@ Některé doprovody digitalizoval [Petr Chaloupský](http://www.chaloupsky.op.cz
 Chcete-li se do projektu zapojit, kontaktujte [mne](https://karlin.mff.cuni.cz/~slavika/).
 
 Stav přepisu je možné vidět [zde](https://docs.google.com/spreadsheets/d/14aePxDP_JFILqAcNDQxL1LpkKi1S2q6XfP4ELKms_QI/edit).
+
+Máte-li rádi Mešní zpěvy, můžete se přidat do FB skupiny [Máme rádi Mešní zpěvy](https://www.facebook.com/groups/1569554670524767) ☺️
