@@ -1726,6 +1726,11 @@
         <type>half</type>
         <stem>up</stem>
         <staff>1</staff>
+        <notations>
+          <articulations>
+            <breath-mark placement="above">comma</breath-mark>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -1824,6 +1829,11 @@
         <type>half</type>
         <stem>up</stem>
         <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark placement="below">comma</breath-mark>
+          </articulations>
+        </notations>
       </note>
       <note>
         <pitch>
