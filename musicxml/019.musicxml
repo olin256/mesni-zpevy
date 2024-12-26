@@ -6,9 +6,9 @@
   </work>
   <identification>
     <encoding>
-      <software>Audiveris 5.3.1</software>
+      <software>Audiveris 5.4-alpha</software>
       <software>ProxyMusic 4.0.2</software>
-      <encoding-date>2023-11-12</encoding-date>
+      <encoding-date>2024-12-26</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="stem" type="yes"/>
@@ -1595,13 +1595,12 @@
       <note>
         <pitch>
           <step>B</step>
-          <alter>1</alter>
           <octave>4</octave>
         </pitch>
         <duration>1</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <accidental>sharp</accidental>
+        <accidental>natural</accidental>
         <stem>up</stem>
         <staff>1</staff>
       </note>
@@ -1727,11 +1726,6 @@
         <type>half</type>
         <stem>up</stem>
         <staff>1</staff>
-        <notations>
-          <articulations>
-            <breath-mark/>
-          </articulations>
-        </notations>
       </note>
       <note>
         <pitch>
@@ -1830,11 +1824,6 @@
         <type>half</type>
         <stem>up</stem>
         <staff>2</staff>
-        <notations>
-          <articulations>
-            <breath-mark/>
-          </articulations>
-        </notations>
       </note>
       <note>
         <pitch>
