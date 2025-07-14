@@ -4,6 +4,9 @@
   <work>
     <work-number>131</work-number>
   </work>
+  <work>
+    <work-number>131</work-number>
+  </work>
   <identification>
     <encoding>
       <encoding-date>2024-12-28</encoding-date>
@@ -25,8 +28,11 @@
         <instrument-name>Organ</instrument-name>
         <instrument-sound>keyboard.organ.pipe</instrument-sound>
         <solo/>
+        <instrument-sound>keyboard.organ.pipe</instrument-sound>
       </score-instrument>
       <midi-instrument id="P1-I1">
+        <midi-name>Church Organ</midi-name>
+        <midi-bank>20</midi-bank>
         <midi-name>Church Organ</midi-name>
         <midi-bank>20</midi-bank>
       </midi-instrument>
@@ -453,22 +459,6 @@
     <measure number="5">
       <note>
         <pitch>
-          <step>A</step>
-          <octave>3</octave>
-        </pitch>
-        <duration>4</duration>
-        <voice>1</voice>
-        <type>whole</type>
-        <staff>1</staff>
-        <notations>
-          <articulations>
-            <breath-mark/>
-          </articulations>
-        </notations>
-      </note>
-      <note>
-        <chord/>
-        <pitch>
           <step>D</step>
           <octave>4</octave>
         </pitch>
@@ -482,21 +472,23 @@
       </backup>
       <note>
         <pitch>
-          <step>D</step>
+          <step>A</step>
           <octave>3</octave>
         </pitch>
         <duration>4</duration>
-        <voice>5</voice>
+        <voice>2</voice>
         <type>whole</type>
-        <staff>2</staff>
+        <staff>1</staff>
         <notations>
           <articulations>
             <breath-mark/>
           </articulations>
         </notations>
       </note>
+      <backup>
+        <duration>4</duration>
+      </backup>
       <note>
-        <chord/>
         <pitch>
           <step>F</step>
           <octave>3</octave>
@@ -505,6 +497,24 @@
         <voice>5</voice>
         <type>whole</type>
         <staff>2</staff>
+      </note>
+      <backup>
+        <duration>4</duration>
+      </backup>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>6</voice>
+        <type>whole</type>
+        <staff>2</staff>
+        <notations>
+          <articulations>
+            <breath-mark/>
+          </articulations>
+        </notations>
       </note>
     </measure>
     <!--============== Part: P1, Measure: 6 ==============-->
@@ -722,13 +732,12 @@
       <note>
         <pitch>
           <step>B</step>
-          <alter>-1</alter>
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
         <voice>1</voice>
         <type>half</type>
-        <accidental>flat</accidental>
+        <accidental>natural</accidental>
         <stem>up</stem>
         <staff>1</staff>
       </note>
@@ -957,7 +966,7 @@
       <note>
         <pitch>
           <step>A</step>
-          <octave>2</octave>
+          <octave>3</octave>
         </pitch>
         <duration>4</duration>
         <voice>5</voice>
@@ -969,14 +978,16 @@
           </articulations>
         </notations>
       </note>
+      <backup>
+        <duration>4</duration>
+      </backup>
       <note>
-        <chord/>
         <pitch>
           <step>A</step>
-          <octave>3</octave>
+          <octave>2</octave>
         </pitch>
         <duration>4</duration>
-        <voice>5</voice>
+        <voice>6</voice>
         <type>whole</type>
         <staff>2</staff>
       </note>
@@ -1308,17 +1319,6 @@
     <measure number="14">
       <note>
         <pitch>
-          <step>A</step>
-          <octave>3</octave>
-        </pitch>
-        <duration>4</duration>
-        <voice>1</voice>
-        <type>whole</type>
-        <staff>1</staff>
-      </note>
-      <note>
-        <chord/>
-        <pitch>
           <step>D</step>
           <octave>4</octave>
         </pitch>
@@ -1327,9 +1327,32 @@
         <type>whole</type>
         <staff>1</staff>
       </note>
-      <barline>
-        <bar-style>light-heavy</bar-style>
-      </barline>
+      <backup>
+        <duration>4</duration>
+      </backup>
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>2</voice>
+        <type>whole</type>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>4</duration>
+      </backup>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>5</voice>
+        <type>whole</type>
+        <staff>2</staff>
+      </note>
       <backup>
         <duration>4</duration>
       </backup>
@@ -1339,18 +1362,7 @@
           <octave>3</octave>
         </pitch>
         <duration>4</duration>
-        <voice>5</voice>
-        <type>whole</type>
-        <staff>2</staff>
-      </note>
-      <note>
-        <chord/>
-        <pitch>
-          <step>F</step>
-          <octave>3</octave>
-        </pitch>
-        <duration>4</duration>
-        <voice>5</voice>
+        <voice>6</voice>
         <type>whole</type>
         <staff>2</staff>
       </note>
