@@ -34,7 +34,7 @@
     </score-part>
   </part-list>
   <part id="P1">
-    <!--============== Part: P1, Measure: 0 ==============-->
+    <!--=======================================================-->
     <measure number="0" implicit="yes">
       <attributes>
         <divisions>2</divisions>
@@ -163,7 +163,7 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 1 ==============-->
+    <!--=======================================================-->
     <measure number="1">
       <note>
         <pitch>
@@ -429,7 +429,7 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 2 ==============-->
+    <!--=======================================================-->
     <measure number="2">
       <note>
         <pitch>
@@ -607,7 +607,7 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 3 ==============-->
+    <!--=======================================================-->
     <measure number="3">
       <note>
         <pitch>
@@ -786,7 +786,7 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 4 ==============-->
+    <!--=======================================================-->
     <measure number="4">
       <note>
         <pitch>
@@ -910,8 +910,8 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 5 ==============-->
-    <measure number="5">
+    <!--=======================================================-->
+    <measure number="X4" implicit="yes">
       <note>
         <pitch>
           <step>G</step>
@@ -922,7 +922,6 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
-        <beam number="1">begin</beam>
       </note>
       <note>
         <pitch>
@@ -934,7 +933,6 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
-        <beam number="1">end</beam>
       </note>
       <backup>
         <duration>2</duration>
@@ -979,8 +977,8 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 6 ==============-->
-    <measure number="6">
+    <!--=======================================================-->
+    <measure number="5">
       <note>
         <pitch>
           <step>C</step>
@@ -1184,8 +1182,8 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 7 ==============-->
-    <measure number="7">
+    <!--=======================================================-->
+    <measure number="6">
       <note>
         <pitch>
           <step>G</step>
@@ -1225,7 +1223,6 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
-        <beam number="1">begin</beam>
       </note>
       <note>
         <pitch>
@@ -1237,7 +1234,6 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
-        <beam number="1">end</beam>
       </note>
       <backup>
         <duration>8</duration>
@@ -1380,8 +1376,8 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 8 ==============-->
-    <measure number="8">
+    <!--=======================================================-->
+    <measure number="7">
       <note>
         <pitch>
           <step>D</step>
@@ -1613,8 +1609,8 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 9 ==============-->
-    <measure number="9">
+    <!--=======================================================-->
+    <measure number="8">
       <note>
         <pitch>
           <step>F</step>
@@ -1778,8 +1774,8 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 10 ==============-->
-    <measure number="10">
+    <!--=======================================================-->
+    <measure number="9">
       <note>
         <pitch>
           <step>A</step>
@@ -2043,8 +2039,8 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 11 ==============-->
-    <measure number="11">
+    <!--=======================================================-->
+    <measure number="10">
       <note>
         <pitch>
           <step>G</step>
@@ -2186,8 +2182,8 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 12 ==============-->
-    <measure number="12">
+    <!--=======================================================-->
+    <measure number="11">
       <note>
         <pitch>
           <step>G</step>
@@ -2395,8 +2391,8 @@
         <staff>2</staff>
       </note>
     </measure>
-    <!--============== Part: P1, Measure: 13 ==============-->
-    <measure number="13">
+    <!--=======================================================-->
+    <measure number="12">
       <note>
         <pitch>
           <step>C</step>
