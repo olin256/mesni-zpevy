@@ -36,7 +36,7 @@
     <measure number="1">
       <attributes>
         <divisions>2</divisions>
-        <key number="1">
+        <key>
           <fifths>-1</fifths>
         </key>
         <time>
@@ -259,6 +259,7 @@
       <note>
         <pitch>
           <step>B</step>
+          <alter>-1</alter>
           <octave>2</octave>
         </pitch>
         <duration>4</duration>
@@ -800,6 +801,7 @@
       <note>
         <pitch>
           <step>B</step>
+          <alter>-1</alter>
           <octave>2</octave>
         </pitch>
         <duration>4</duration>
