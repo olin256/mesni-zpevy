@@ -467,6 +467,7 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <tie type="start"/>
         <voice>2</voice>
         <type>half</type>
         <stem>down</stem>
@@ -565,9 +566,6 @@
         <type>half</type>
         <stem>down</stem>
         <staff>1</staff>
-        <notations>
-          <tied type="stop" orientation="under"/>
-        </notations>
       </note>
       <note>
         <chord/>
@@ -576,9 +574,13 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <tie type="stop"/>
         <voice>2</voice>
         <type>half</type>
         <staff>1</staff>
+        <notations>
+          <tied type="stop" orientation="under"/>
+        </notations>
       </note>
       <note>
         <rest/>
@@ -674,11 +676,15 @@
           <octave>4</octave>
         </pitch>
         <duration>3</duration>
+        <tie type="start"/>
         <voice>2</voice>
         <type>half</type>
         <dot/>
         <stem>down</stem>
         <staff>1</staff>
+        <notations>
+          <tied type="start" orientation="under"/>
+        </notations>
       </note>
       <backup>
         <duration>3</duration>
@@ -758,9 +764,13 @@
         </pitch>
         <duration>2</duration>
         <voice>2</voice>
+        <tie type="stop"/>
         <type>half</type>
         <stem>down</stem>
         <staff>1</staff>
+        <notations>
+          <tied type="stop" orientation="over"/>
+        </notations>
       </note>
       <note>
         <pitch>
@@ -1064,6 +1074,7 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <tie type="start"/>
         <voice>2</voice>
         <type>half</type>
         <stem>down</stem>
@@ -1150,9 +1161,6 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <barline>
-        <bar-style>light-heavy</bar-style>
-      </barline>
       <backup>
         <duration>3</duration>
       </backup>
@@ -1166,9 +1174,6 @@
         <type>half</type>
         <stem>down</stem>
         <staff>1</staff>
-        <notations>
-          <tied type="stop" orientation="under"/>
-        </notations>
       </note>
       <note>
         <chord/>
@@ -1177,9 +1182,13 @@
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
+        <tie type="stop"/>
         <voice>2</voice>
         <type>half</type>
         <staff>1</staff>
+        <notations>
+          <tied type="stop" orientation="under"/>
+        </notations>
       </note>
       <note>
         <rest/>
