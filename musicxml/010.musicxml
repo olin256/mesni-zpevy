@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0.2 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
-<score-partwise version="4.0.2">
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0.3 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="4.0.3">
   <work>
     <work-number>10</work-number>
   </work>
   <identification>
     <encoding>
-      <software>Audiveris 5.3.1</software>
-      <software>ProxyMusic 4.0.2</software>
-      <encoding-date>2023-11-02</encoding-date>
+      <software>Audiveris 5.10.2</software>
+      <software>ProxyMusic 4.0.3</software>
+      <encoding-date>2026-06-22</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="stem" type="yes"/>
@@ -1105,8 +1105,7 @@
       </note>
       <note>
         <pitch>
-          <step>C</step>
-          <alter>1</alter>
+          <step>D</step>
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
