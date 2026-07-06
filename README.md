@@ -1,4 +1,4 @@
-# mesni-zpevy
+# mesni-zpevy-doprovody
 
 Digitalizace varhanních doprovodů k Mešním zpěvům.
 
