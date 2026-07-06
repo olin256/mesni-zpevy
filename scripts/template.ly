@@ -6,7 +6,7 @@
     source =
     "Varhanní doprovod k mešním zpěvům, k hymnům pro denní modlitbu církve a ke zpěvům s odpovědí lidu; Česká liturgická komise, Praha 1990"
     tagline = \markup { \center-column {
-        "Digitalizované doprovody k Mešním zpěvům https://github.com/olin256/mesni-zpevy"
+        "Digitalizované doprovody k Mešním zpěvům https://github.com/olin256/mesni-zpevy-doprovody"
         \concat { "Podle " \italic "Varhanní doprovod k mešním zpěvům, k hymnům pro denní modlitbu církve" }
         \italic "a ke zpěvům s odpovědí lidu; Česká liturgická komise, Praha 1990"
     } }
